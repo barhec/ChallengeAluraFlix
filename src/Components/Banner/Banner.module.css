@@ -1,0 +1,57 @@
+.background {
+    background-image: url('./BannerMain.png');
+    background-size: cover;
+    background-position: center;
+    height: 832px;
+    /* position: relative; */
+    padding: 20px;
+}
+
+.overlay {
+    height: 100%;
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 35%; */
+    /* transform: translate(-50%, -50%); */
+    text-align: justify;
+    color: #F5F5F5;
+}
+
+.categoria{
+    width: 296.82px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6BD1FF;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2{
+    font-size: 46px;
+    font-weight: 400;
+    color: #F5F5F5;
+}
+
+p{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: light;
+}
+
+.imagen{
+    height: 343px;
+    border-radius: 20px;
+}

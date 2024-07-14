@@ -1,0 +1,45 @@
+.contenedorLinks{
+    display: flex;
+    gap: 20px;
+}
+
+.linkHome{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 53px;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: bold;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    border: solid 2px white;
+    border-radius: 10px;
+}
+
+.linkVideoNuevo{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 53px;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: bold;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    border: solid 2px white;
+    border-radius: 10px;
+}
+
+.linkHome:hover, .linkVideoNuevo:hover{
+    color: #2771D1;
+    border: solid 2px #2771D1;
+    box-shadow: inset 0 0 20px #2771D1;
+    background-color: #000000;
+}

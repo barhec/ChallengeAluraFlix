@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "titulo": "Equipo Front End",
+        "capa": "https://img.youtube.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/rpvrLaBQwgg",
+        "categoria": "FRONT END"
+    },
+    {
+        "id": 2,
+        "titulo": "¿Cómo un Desarrollador Front End Utiliza el Figma?",
+        "capa": "https://img.youtube.com/vi/UuAX5azcvDQ/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/UuAX5azcvDQ",
+        "categoria": "FRONT END"
+    },
+    {
+        "id": 3,
+        "titulo": "Cómo Volverse un Desarrollador Front End",
+        "capa": "https://img.youtube.com/vi/-Ou5c3A225k/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/-Ou5c3A225k",
+        "categoria": "FRONT END"
+    },
+    {
+        "id": 4,
+        "titulo": "Simplificando el Back End",
+        "capa": "https://img.youtube.com/vi/XuSXJ9DUcvY/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/XuSXJ9DUcvY",
+        "categoria": "BACK END"
+    },
+    {
+        "id": 5,
+        "titulo": "Explorando el Poder del Back-End en el Desarrollo Web",
+        "capa": "https://img.youtube.com/vi/Z024LSCMqFk/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/Z024LSCMqFk",
+        "categoria": "BACK END"
+    },
+    {
+        "id": 6,
+        "titulo": "¿Qué es SQL y NoSQL?",
+        "capa": "https://img.youtube.com/vi/cLLKVd5CNLc/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/cLLKVd5CNLc",
+        "categoria": "BACK END"
+    },
+    {
+        "id": 7,
+        "titulo": "Desafíos y Soluciones del Trabajo Remoto",
+        "capa": "https://img.youtube.com/vi/kIvnVfnmDyE/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/kIvnVfnmDyE",
+        "categoria": "INNOVACIÓN Y GESTIÓN"
+    },
+    {
+        "id": 8,
+        "titulo": "Aprendiendo a Utilizar Figma",
+        "capa": "https://img.youtube.com/vi/Y_6R3XTA2go/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/Y_6R3XTA2go",
+        "categoria": "INNOVACIÓN Y GESTIÓN"
+    },
+    {
+        "id": 9,
+        "titulo": "Utiliza ChatGPT para Practicar Inglés",
+        "capa": "https://img.youtube.com/vi/Yz-6uHdwBPE/maxresdefault.jpg",
+        "videoURL": "https://www.youtube.com/embed/Yz-6uHdwBPE",
+        "categoria": "INNOVACIÓN Y GESTIÓN"
+    }
+]

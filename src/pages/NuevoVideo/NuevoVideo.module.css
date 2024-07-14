@@ -1,0 +1,136 @@
+.bodySection{
+    background-color: #191919;
+    padding: 20px 100px;
+    border-bottom: solid 2px #2271D1;
+    border-top: solid 2px #2271D1;
+}
+
+.tituloNuevo{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 47px;
+}
+
+h5{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 91px;
+    color: white;
+    border-top: solid 2px #262626;
+    border-bottom: solid 2px #262626;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: lighter;
+}
+
+.filaUnoImputs, .filaDosImputs{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contenedorTitulo, .contenedorCategoria, .contenedorImagen, .contenedorVideo, .contenedorDescripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nombreDelLabel{
+    font-size: 20px;
+    color: white;
+}
+
+input{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    padding: 0 5px;
+    border: solid 2px #262626;
+    border-radius: 15px;
+    background: none;
+}
+
+input::placeholder{
+    color: white;
+    font-weight: lighter;
+    align-content: space-around;
+}
+
+.inputTitulo{
+    width: 420px;
+    height: 62px;
+}
+
+.inputCategoria, .inputImagen, .inputVideo{
+    width: 500px;
+    height: 62px;
+}
+
+.inputDescripcion{
+    width: 500px;
+    height: 220px;
+    display: flex;
+    vertical-align: text-top;
+}
+
+.inputDescripcion::placeholder{
+    position: absolute;
+    top: 10px;
+    
+}
+
+.mensajesDeError{
+    font-size: 16px;
+    color: red;
+}
+
+.btnContenedor{
+    display: flex;
+    gap: 20px;
+}
+
+.btnGuardar{
+    width: 180px;
+    height: 54px;
+    background: none;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px #2271D1;
+}
+
+.btnLimpiar{
+    width: 180px;
+    height: 54px;
+    background: none;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px white;
+}
+
+.btnGuardar:hover, .btnLimpiar:hover{
+    background: #000000;
+    color: #2271D1;
+    border: solid 2px #2271D1;
+    box-shadow: inset 0 0 20px #2271D1;
+}
