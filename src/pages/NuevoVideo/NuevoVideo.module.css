@@ -60,7 +60,7 @@ h6{
     color: white;
 }
 
-input{
+input, select{
     font-family: "Source Sans 3", sans-serif;
     font-weight: normal;
     font-size: 20px;
@@ -85,6 +85,25 @@ input::placeholder{
 .inputCategoria, .inputImagen, .inputVideo{
     width: 500px;
     height: 62px;
+}
+
+.opcionesCategorias{
+    font-weight: normal;
+    color: white;
+    background: #191919;
+}
+
+.opcionesDesplegables{
+    font-weight: lighter;
+    color: white;
+    background: #191919;
+}
+
+.inputCategoria{
+    cursor: pointer;
+    font-weight: lighter;
+    color: white;
+    background: none;
 }
 
 .inputDescripcion{

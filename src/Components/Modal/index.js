@@ -58,7 +58,7 @@ function Modal({ video, categorias, onSave, onClose }) {
                             value={categoria}
                             onChange={(e) => setCategoria(e.target.value)}
                         >
-                            {categorias.map((cat) => (
+                            {categorias && categorias.map((cat) => (
                                 <option key={cat} value={cat}>
                                     {cat}
                                 </option>

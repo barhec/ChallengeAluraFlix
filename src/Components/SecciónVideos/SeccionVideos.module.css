@@ -1,0 +1,35 @@
+.contenedor{
+    padding: 10px 20px 50px 20px;
+    background-color: #262626;
+}
+
+.videosPorCategoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textoCatFRONTEND, .textoCatBACKEND, .textoCatINNOVACIÓNYGESTIÓN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    font-size: 32PX;
+    max-width: none;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.textoCatFRONTEND{
+    background-color: #6BD1FF;
+}
+
+.textoCatBACKEND{
+    background-color: #00C86F;
+}
+
+.textoCatINNOVACIÓNYGESTIÓN{
+    background-color: #FFBA05;
+}

@@ -4,7 +4,7 @@ function Footer(){
     return(
         <footer className={styles.footer}>
             <section className={styles.footerContainer}>
-                <img src={logo}/>
+                <img src={logo} alt="Logo Challenge"/>
             </section>
         </footer>
     )

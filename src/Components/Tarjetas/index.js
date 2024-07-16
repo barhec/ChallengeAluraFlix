@@ -4,7 +4,7 @@ import BotonBorrar from "Components/BotonBorrar";
 import BotonEditar from "Components/BotonEditar";
 import Modal from "Components/Modal";
 
-function Tarjeta({video, categorias, onDelete, onSave}){
+function Tarjeta({video, categorias, onDelete, onSave, bordeColor}){
     const [reproduciendo, setReproduciendo] = useState(false);
     const [editando, setEditando] = useState(false);
 
@@ -31,7 +31,7 @@ function Tarjeta({video, categorias, onDelete, onSave}){
 
     return(
         <section className={styles.contenedorGeneral}>
-            <div className={styles.contenedorVideo}>
+            <div className={styles.contenedorVideo} style={{borderColor: bordeColor}}>
                 {!reproduciendo ? (
                     <img
                         src={video.capa}
@@ -51,7 +51,7 @@ function Tarjeta({video, categorias, onDelete, onSave}){
                     ></iframe>
                 )}
             </div>
-            <div className={styles.contenedorBotones}>
+            <div className={styles.contenedorBotones} style={{borderColor: bordeColor}}>
                 <BotonBorrar onDelete={manejandoElBorrado}/>
                 <BotonEditar onEdit={manejandoElEditado}/>
             </div>

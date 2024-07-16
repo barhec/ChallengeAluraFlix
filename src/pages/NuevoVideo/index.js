@@ -1,8 +1,13 @@
 import styles from "./NuevoVideo.module.css"
 import Form, { string, useForm } from "react-form-ease"
 
+import React, { useState, useEffect } from 'react';
+import db from '../../data/db.json';
+
 function NuevoVideo(){
-    const {formData, updateForm, errors, validateInput, ...form} = useForm({
+    const [categorias, setCategorias] = useState([]);
+
+    const {formData, updateForm, errors, validateInput, handleSubmit, resetForm} = useForm({
         data: {
             titulo: "",
             categoria: "",
@@ -16,12 +21,21 @@ function NuevoVideo(){
             capa: (value) => string(value).required('Ingresa el link de la imagen del video').validate(),
             videoURL: (value) => string(value).required('Ingresa el link del video').validate(),
             descripcion: (value) => string(value).required('Ingresa la descripción del video').max(100, 'Has superado el límite de 100 caracteres').validate(),
-        }
-    })
+        },
 
-    const manejandoElSubmit = () => {
-        console.log(formData)
-    }
+        onSubmit: (data) => {
+            console.log(data);
+        }
+    });
+
+    useEffect(() => {
+        const categoriasUnicas = [...new Set(db.map(item => item.categoria))];
+        setCategorias(categoriasUnicas);
+    }, []);
+
+    const handleReset = () => {
+        resetForm();
+    };
 
     return(
         <section className={styles.bodySection}>
@@ -29,7 +43,7 @@ function NuevoVideo(){
                 <h5>NUEVO VIDEO</h5>
                 <h6>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</h6>
             </div>
-            <Form onSubmit={manejandoElSubmit} form={form}>
+            <Form onSubmit={handleSubmit} form={{formData, updateForm, errors, validateInput}}>
                 <div className={styles.subtitulo}>
                     <h4>Crear Tarjeta</h4>
                 </div>
@@ -49,15 +63,19 @@ function NuevoVideo(){
                     </div>
                     <div className={styles.contenedorCategoria}>
                         <label className={styles.nombreDelLabel}>Categoría</label>
-                        <input
+                        <select
                             type="text"
                             className={styles.inputCategoria}
                             value={formData.categoria}
                             onChange={(e) => updateForm({categoria: e.target.value})}
                             onBlur={() => validateInput('categoria')}
-                            placeholder="Elija una categoría"
                             name="Categoría"
-                        />
+                        >
+                            <option value="" disabled className={styles.opcionesCategorias}>Elija una Categoría</option>
+                            {categorias.map((categoria, index) =>(
+                                <option key={index} value={categoria} className={styles.opcionesDesplegables}>{categoria}</option>
+                            ))}
+                        </select>
                         <p className={styles.mensajesDeError}>{errors?.categoria}</p>
                     </div>
                 </div>
@@ -105,7 +123,7 @@ function NuevoVideo(){
                 </div>
                 <div className={styles.btnContenedor}>
                     <button type="submit" className={styles.btnGuardar}>Guardar</button>
-                    <button type="submit" className={styles.btnLimpiar}>Limpiar</button>
+                    <button type="submit" className={styles.btnLimpiar} onClick={handleReset}>Limpiar</button>
                 </div>
             </Form>
         </section>

@@ -20,6 +20,11 @@
     border-radius: 10px;
 }
 
+.activeLink{
+    border: solid 2px #2771D1;
+    color: #2771D1;
+}
+
 .linkVideoNuevo{
     display: flex;
     flex-flow: wrap;
