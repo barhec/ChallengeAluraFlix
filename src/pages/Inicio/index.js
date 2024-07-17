@@ -32,7 +32,7 @@ function Inicio() {
     const videosFiltradosInnovacion = videosR.filter(video => video.categoria === categoriaSeleccionadaTres);
 
     return (
-        <>
+        <section>
             <Banner />
             <SeccionVideos
                 categoria={categoriaSeleccionadaUno}
@@ -58,7 +58,7 @@ function Inicio() {
                 onSave={manejandoElSalvado}
                 bordeColor={coloresPorCategoria[categoriaSeleccionadaTres]}
             />
-        </>
+        </section>
     );
 }
 

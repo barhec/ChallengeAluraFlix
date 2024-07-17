@@ -21,7 +21,6 @@
     height: 90%;
     max-width: 600px;
     position: relative;
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
 }
   
 .btnCerrar{
@@ -31,6 +30,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 1;
 }
   
 .btnCerrar img{
@@ -105,4 +105,57 @@ h2{
     background-color: #000000;
     box-shadow: inset 0 0 12px #2271D1
 }
-  
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .modal{
+        width: 290px;
+        height: 48%;
+        top: -170px;
+        left: -140px;
+    }
+
+    h2{
+        font-size: 22px;
+        top: -8.5%;
+    }
+
+    .form{
+        top: -48px;
+    }
+
+    .form label,
+    .form input,
+    .form textarea,
+    .form select{
+        font-size: 12px;
+        height: 60px;
+    }
+
+    .btnsForm{
+        margin-top: 3px;
+    }
+
+    .form button{
+        width: 130px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    h2{
+        font-size: 28px;
+        top: -9%;
+    }
+
+    .form{
+        top: -55px;
+    }
+
+    .form label,
+    .form input,
+    .form textarea,
+    .form select{
+        font-size: 15px;
+        height: 60px;
+    }
+}

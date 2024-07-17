@@ -5,8 +5,6 @@
     height: 832px;
     position: relative;
     padding: 20px;
-    border-top: solid 2px #6BD1FF;
-    box-shadow: inset 0px 6px 10px #6BD1FF;
 }
 
 .overlay {
@@ -56,4 +54,30 @@ p{
 .imagen{
     height: 343px;
     border-radius: 20px;
+    z-index: -1;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .background{
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .categoria{
+        width: 282px;
+        height: 65px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .imagen{
+        height: 237px;
+    }
 }

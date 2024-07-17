@@ -33,3 +33,38 @@
 .textoCatINNOVACIÓNYGESTIÓN{
     background-color: #FFBA05;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .contenedor{
+        bottom: 0;
+        left: 0;
+    }
+
+    .videosPorCategoria{
+        justify-content: none;
+        gap: 20px;
+        overflow-y: scroll;
+        overflow-x: none;
+    }
+
+    .textoCatFRONTEND, .textoCatBACKEND, .textoCatINNOVACIÓNYGESTIÓN{
+        width: 286px;
+        height: 70px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .textoCatFRONTEND, .textoCatBACKEND, .textoCatINNOVACIÓNYGESTIÓN{
+        width: 286px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .videosPorCategoria{
+        justify-content: none;
+        gap: 20px;
+        overflow-y: scroll;
+        overflow-x: none;
+    }
+}

@@ -4,9 +4,14 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    /* color: white; */
 }
 
 .footerContainer{
     display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer{
+        display: none !important;
+    }
 }

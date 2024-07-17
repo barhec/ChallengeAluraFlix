@@ -153,3 +153,48 @@ input::placeholder{
     border: solid 2px #2271D1;
     box-shadow: inset 0 0 20px #2271D1;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .bodySection{
+        padding: 20px;
+    }
+
+    h5{
+        font-size: 40px;
+    }
+
+    h6{
+        font-size: 15px;
+    }
+
+    .subtitulo{
+        font-size: 36px;
+    }
+
+    .filaUnoImputs, .filaDosImputs{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .inputTitulo, .inputCategoria, .inputImagen, .inputDescripcion, .inputVideo{
+        width: 325px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .bodySection{
+        padding: 20px;
+    }
+
+    h5{
+        font-size: 35px;
+    }
+
+    .subtitulo{
+        font-size: 26px;
+    }
+
+    .inputTitulo, .inputCategoria, .inputImagen, .inputVideo{
+        width: 345px;
+    }
+}
